@@ -1,4 +1,4 @@
-export const serviceUrl = "http://localhost:3000";
+export const serviceUrl = "https://playtime-10-1.onrender.com";
 
 export const maggie = {
   firstName: "Maggie",
