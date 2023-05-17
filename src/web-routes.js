@@ -26,4 +26,8 @@ export const webRoutes = [
   { method: "POST", path: "/track/{id}/updatetrack/{trackid}", config: trackController.update },
 
   { method: "GET", path: "/{param*}", handler: { directory: { path: "./public" } }, options: { auth: false } },
+  
+  { method: "POST", path: "/playlist/{id}/uploadimage", config: playlistController.uploadImage },
+  { method: "GET", path: "/playlist/{id}/deleteimage/{img}", config: playlistController.deleteImage },
+
 ];
