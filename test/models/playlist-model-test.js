@@ -31,7 +31,7 @@ suite("Playlist Model tests", () => {
   test("get a playlist - success", async () => {
     const playlist = await db.playlistStore.addPlaylist(mozart);
     const returnedPlaylist = await db.playlistStore.getPlaylistById(playlist._id);
-    assertSubset(mozart, playlist);
+    assertSubset(mozart, returnedPlaylist);
   });
 
   test("delete One Playist - success", async () => {
